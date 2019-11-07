@@ -3,10 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="css/index.css" />
   <title>My Resume</title>
 
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="preprocessing-I/less">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +15,53 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <nav>        
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>        
+  </nav>
+
+  <header>
+    <section class="intro">
+      <div class="photo"><img src="images/wavebg.jpg" alt="Waves"/></div>
+      <h1>Jonny Appleseed - Web Dev</h1>
+          <h2>Technology is my jam!</h2>
+          <p>Occasionally I have time to work on side projects, if you're interested, let me know by signing up on this website.</p>
+            <div class=myButton>
+              <a href="#" class="myButton">Let's Get Together</a>
+            </div>
+    </section>
+  </header>
+  <section class="info">
+    <div class="skills">
+    <h2>Let Me Tell You A Story...</h2>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sapiente neque possimus nihil vitae earum saepe in! Vel illo perspiciatis iusto tempora in ullam, eveniet magnam ipsam omnis! Pariatur, natus.</p>
+    </div>
+    <div class="other-skills">
+    <h2>Stuff I Don't Suck At:</h2>
+      <p>Drinking Beer</p>
+      <p>Playing golf <br> while drinking beer</p>
+      <p>Taking long <br> walks while drinking beer</p>
+      <p>Taking naps after drinking beer</p>
+      <p>I have a great sense of direction</p>
+    </div>
+  </section>
+  <section class="work-history">
+    <h2>Work History</h2>
+      <p>ESPN <br>3 years</p>
+      <p>Vox Media<br>2 years</p>
+      <p>Fox Sports<br>1 year</p>
+  </section>
+
+
+  </section>
+
+
+
 </body>
 </html>
+display: flex;
+	justify-content: flex-end;
+	color: white;
+	padding: 3%;

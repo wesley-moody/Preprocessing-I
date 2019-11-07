@@ -48,12 +48,138 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+// MEDIA QUERIES HERE //
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+// Mixins //
+
+.bordered(){
+	border-top: 2px solid black;
+	padding: 1%;
 }
 
-html, body {
-    height: 100%;
+
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 20%;
+	justify-content: center;
+	border: 1px solid lightgray;
 }
+
+html{
+	padding: 33px;
+}
+
+body {
+	margin: 10px;
+	height: 90%;
+	width: 100%;
+	line-height: 2;
+	font-size: 62.5%;
+	border: 2px solid lightsalmon;
+}
+
+p {
+	font-size: 2vh;
+}
+
+
+
+
+header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background-color: lightgray;
+	padding: 6%;
+	border: bottom;
+nav {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: orangered;
+
+@media (max-width: 500px ) {
+	flex-direction: column;
+} //closes nav media query //
+} // closes nav //
+a {
+	color: white;
+	font-size: 1.5vh;
+	justify-content: flex-end;
+} //closes a //
+.myButton {
+	display: flex;
+	position: absolute;
+	width: 48%;
+	font-size: 2vh;
+	color: lightgray;
+	background-color: darkviolet;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	margin: auto;
+@media (max-width 500px) {
+	width: 60%;
+} //closes button media query //
+} //closes button //
+@media( max-width: 500px){
+	flex-direction: column;
+	align-items: center;
+} //closes media query on header //
+
+h1 {
+	color: dodgerblue;
+	font-size: 3rem;
+
+@media( max-width: 500px ){
+	margin-bottom: 20px;
+} //closes h1 media query//
+} //closes h1//
+} //closes header//
+
+
+
+h2 {
+	font-size: 2.8vh;
+}
+
+p {
+	font-size: 2vh;
+}
+
+.photo {
+	display: flex;
+	max-height: 30vh;
+	width: 100%;	
+}
+
+.info {
+	
+	width: 100%
+}
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	padding: 8%;
+	.bordered();
+}
+
+.other-skills {
+	display: flex;
+	padding: 8%;
+	.bordered();
+}
+
+.work-history{
+	display: flex;
+	padding: 8%;
+	.bordered();
+	background-color: lightgreen;
+}
+
 
