@@ -129,7 +129,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  width: 80%;
+  width: 100%;
   margin: 20%;
   justify-content: center;
   border: 1px solid lightgray;
@@ -140,10 +140,13 @@ html {
 body {
   margin: 10px;
   height: 90%;
-  width: 90%;
+  width: 100%;
   line-height: 2;
   font-size: 62.5%;
   border: 2px solid lightsalmon;
+}
+p {
+  font-size: 2vh;
 }
 nav {
   display: flex;
@@ -156,33 +159,56 @@ nav a {
   font-size: 1.5vh;
   justify-content: flex-end;
 }
-.header {
-  text-align: center;
+header {
+  display: flex;
+  align-items: center;
   width: 100%;
-  background-color: yellowgreen;
-  padding: 42%;
+  background-color: lightgray;
+  padding: 6%;
   border: bottom;
+}
+header .myButton {
+  display: flex;
+  position: absolute;
+  width: 48%;
+  font-size: 2vh;
+  color: lightgray;
+  background-color: darkviolet;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: auto;
 }
 h1 {
   color: dodgerblue;
   font-size: 42px;
 }
 h2 {
-  color: hotpink;
-  font-size: 28px;
+  font-size: 2.8vh;
 }
 p {
-  background-color: dodgerblue;
+  font-size: 2vh;
 }
 .photo {
   display: flex;
   max-height: 30vh;
   width: 100%;
 }
+.info {
+  padding: 8%;
+}
 .skills {
   display: flex;
-  background-color: lightsalmon;
+  flex-direction: column;
+  padding: 8%;
+  border-top: 2px solid black;
 }
 .other-skills {
   display: flex;
+  padding: 8%;
+  border-top: 2px solid black;
+}
+.work-history {
+  display: flex;
+  padding: 8%;
+  border-top: 2px solid black;
 }
